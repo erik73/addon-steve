@@ -2,7 +2,7 @@
 
 ## 0.3.1
 
-- New base image from community addons
+- New base image from community addons repository
 
 ## 0.3.0
 
