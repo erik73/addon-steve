@@ -2,7 +2,7 @@
 
 ## 0.3.1
 
-- New base image
+- New base image from community
 
 ## 0.3.0
 
