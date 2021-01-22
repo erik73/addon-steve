@@ -1,7 +1,6 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
-
-ARG BUILD_ARCH
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.0.1
+# hadolint ignore=DL3006
+FROM ${BUILD_FROM}
 
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -21,23 +20,30 @@ RUN apk add --no-cache \
 COPY rootfs /
 
 # Build arguments
+ARG BUILD_ARCH
 ARG BUILD_DATE
+ARG BUILD_DESCRIPTION
+ARG BUILD_NAME
 ARG BUILD_REF
+ARG BUILD_REPOSITORY
 ARG BUILD_VERSION
 
 # Labels
 LABEL \
-    io.hass.name="Steve" \
-    io.hass.description="OCPP server for EV charging stations" \
+    io.hass.name="${BUILD_NAME}" \
+    io.hass.description="${BUILD_DESCRIPTION}" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Erik Hilton <erikhilton73@gmail.com>" \
-    org.opencontainers.image.title="SteVe" \
-    org.opencontainers.image.description="OCPP server for EV charging stations" \
+    org.opencontainers.image.title="${BUILD_NAME}" \
+    org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
     org.opencontainers.image.vendor="Erik73 Hassio-Addons" \
     org.opencontainers.image.authors="Erik Hilton <erikhilton73@gmail.com>" \
     org.opencontainers.image.licenses="MIT" \
+    org.opencontainers.image.url="https://addons.community" \
+    org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
+    org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
     org.opencontainers.image.revision=${BUILD_REF} \
     org.opencontainers.image.version=${BUILD_VERSION}
