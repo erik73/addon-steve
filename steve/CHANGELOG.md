@@ -2,7 +2,7 @@
 
 ## 0.3.1
 
-- New base image from HA community addons repository
+- New base image from HASS community addons repository
 
 ## 0.3.0
 
