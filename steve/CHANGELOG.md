@@ -19,7 +19,8 @@
 
 ## 0.2.0
 
-- Stop SteVe from building unless there is a new addon version, or build har not run yet
+- Stop SteVe from building unless there is a new addon
+  version, or build har not run yet
 - Add config option to set http port
 
 ## 0.1.2
