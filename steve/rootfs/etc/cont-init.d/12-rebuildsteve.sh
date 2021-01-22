@@ -9,7 +9,7 @@ packageversion="$(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -v "/
 
 if [ "$builtversion" != "$packageversion" ]; then
     bashio::log.info "Starting SteVe rebuild since there is a new verion...."
-    cd /usr/src/steve
+    cd /usr/src/steve || exit
     MAVEN_OPTS="-Xmx100m" mvn package
     rm -rf /data/target
     cp -f /usr/src/steve/pom.xml /data/
