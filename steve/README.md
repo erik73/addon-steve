@@ -2,7 +2,8 @@
 
 SteVe OCPP server for mobile charging stations (Wallbox) supporting the OCPP protocol
 
-![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Project Stage][project-stage-shield]
+![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield]
+![Project Stage][project-stage-shield]
 
 ## About
 
