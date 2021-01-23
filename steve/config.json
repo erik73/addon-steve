@@ -25,5 +25,4 @@
     "admin_password": "str",
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?"
   },
-  "image": "ehilton73/steve-{arch}"
 }
