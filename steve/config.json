@@ -23,7 +23,12 @@
     "httpport": "str",
     "admin_user": "str",
     "admin_password": "str",
-    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?"
-  },
-  "image": "ehilton73/steve-{arch}"
+    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
+    "envvars": [
+    {
+        "name": "str",
+        "value": "str"
+      }
+    ]
+  }
 }
