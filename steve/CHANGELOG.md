@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.6
+
+ - Version 0.36?
+
 ## 0.3.1
 
 - New base image from HASS community addons repository
