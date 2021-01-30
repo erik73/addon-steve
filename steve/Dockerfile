@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.1
+ARG BUILD_FROM=ghcr.io/erik73/base/amd64:1.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -41,7 +41,7 @@ LABEL \
     org.opencontainers.image.vendor="Erik73 Hassio-Addons" \
     org.opencontainers.image.authors="Erik Hilton <erikhilton73@gmail.com>" \
     org.opencontainers.image.licenses="MIT" \
-    org.opencontainers.image.url="https://addons.community" \
+    org.opencontainers.image.url="https://github.com/erik73" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
     org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
