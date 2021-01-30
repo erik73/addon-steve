@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: SteVe
+# Home Assistant Add-on: SteVe
 
 ![Project Stage][project-stage-shield]
 
