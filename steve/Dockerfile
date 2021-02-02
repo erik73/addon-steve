@@ -11,6 +11,7 @@ RUN apk add --no-cache \
     maven=3.6.3-r0 \
     xmlstarlet=1.6.1-r0 \
     mariadb-client=10.5.8-r0 \
+    nginx=1.18.0-r13 \
     && mkdir -p /usr/src \
     && curl -L -s -o steve.tar.gz "https://github.com/RWTH-i5-IDSG/steve/archive/steve-3.4.4.tar.gz"; \
         mkdir /usr/src/steve; \
