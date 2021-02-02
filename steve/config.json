@@ -11,7 +11,6 @@
   "panel_icon": "mdi:CarElectric",
   "map": ["ssl"],
   "services": ["mysql:need"],
-  "host_network": true,
   "hassio_api": true,
   "options": {
     "timezone": "CET",
