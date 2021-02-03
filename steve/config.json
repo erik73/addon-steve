@@ -10,17 +10,20 @@
   "panel_icon": "mdi:CarElectric",
   "map": ["ssl"],
   "services": ["mysql:need"],
-  "host_network": true,
+  "ports": {
+    "8180/tcp": 8180
+  },
+  "ports_description": {
+    "8180/tcp": "SteVe TCP port"
+  },
   "hassio_api": true,
   "options": {
     "timezone": "CET",
-    "httpport": "8180",
     "admin_user": "admin",
     "admin_password": null
   },
   "schema": {
     "timezone": "str",
-    "httpport": "str",
     "admin_user": "str",
     "admin_password": "str",
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?"
