@@ -5,4 +5,4 @@
 # ==============================================================================
 
 bashio::log.info "Starting SteVe...."
-java -jar /data/target/steve.jar
+java -Xmx100m -jar /data/target/steve.jar
