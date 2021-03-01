@@ -11,10 +11,12 @@
   "map": ["ssl"],
   "services": ["mysql:need"],
   "ports": {
-    "8180/tcp": 8180
+    "8180/tcp": 8180,
+    "12801/tcp": null
   },
   "ports_description": {
-    "8180/tcp": "SteVe TCP port"
+    "8180/tcp": "SteVe TCP port",
+    "12801/tcp": "SteVe SOAP return port"
   },
   "hassio_api": true,
   "options": {
