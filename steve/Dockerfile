@@ -7,10 +7,10 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
 RUN apk add --no-cache \
-    openjdk11=11.0.12_p7-r0 \
-    maven=3.6.3-r1 \
+    openjdk11=11.0.13_p8-r0 \
+    maven=3.8.3-r0 \
     xmlstarlet=1.6.1-r0 \
-    mariadb-client=10.5.13-r0 \
+    mariadb-client=10.6.4-r2 \
     && mkdir -p /usr/src \
     && curl -L -s -o steve.tar.gz "https://github.com/RWTH-i5-IDSG/steve/archive/steve-3.4.8.tar.gz"; \
         mkdir /usr/src/steve; \
