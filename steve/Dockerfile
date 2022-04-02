@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/erik73/base/amd64:1.0.10
+ARG BUILD_FROM=ghcr.io/erik73/base/amd64:1.0.11
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -12,7 +12,7 @@ RUN apk add --no-cache \
     xmlstarlet=1.6.1-r0 \
     mariadb-client=10.6.7-r0 \
     && mkdir -p /usr/src \
-    && curl -L -s -o steve.tar.gz "https://github.com/RWTH-i5-IDSG/steve/archive/steve-3.4.8.tar.gz"; \
+    && curl -L -s -o steve.tar.gz "https://github.com/RWTH-i5-IDSG/steve/archive/steve-3.4.9.tar.gz"; \
         mkdir /usr/src/steve; \
         tar -xf steve.tar.gz -C /usr/src/steve --strip-components=1; \
         rm steve.tar.gz;
