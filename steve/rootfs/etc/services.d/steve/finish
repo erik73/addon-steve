@@ -4,8 +4,8 @@
 # Take down the S6 supervision tree when SteVe fails
 # ==============================================================================
 if [[ "${1}" -ne 0 ]] && [[ "${1}" -ne 256 ]]; then
-   bashio::log.warning "steve crashed, halting add-on"
+   bashio::log.warning "SteVe crashed, halting add-on"
    /run/s6/basedir/bin/halt
  fi
 
- bashio::log.info "steve stopped, restarting..."
+ bashio::log.info "SteVe stopped, restarting..."
