@@ -12,12 +12,12 @@ RUN apk add --no-cache \
     xmlstarlet=1.6.1-r0 \
     mariadb-client=10.6.9-r0 \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.36.2-r0 \
+    git=2.36.2-r0 \
     && mkdir -p /usr/src \
     && git clone -b master --depth 1 https://github.com/steve-community/steve \
-        mkdir /usr/src/steve; \
-        tar -xf steve.tar.gz -C /usr/src/steve --strip-components=1; \
-        rm steve.tar.gz; \
+    && mkdir /usr/src/steve \
+    && tar -xf steve.tar.gz -C /usr/src/steve --strip-components=1 \
+    && rm steve.tar.gz \
     && apk del .build-dependencies 
 # Copy data for add-on
 COPY rootfs /
