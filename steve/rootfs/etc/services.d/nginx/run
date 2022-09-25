@@ -4,7 +4,7 @@
 # Runs the Nginx daemon
 # ==============================================================================
 
-bashio::net.wait_for 8234
+bashio::net.wait_for 8180
 
 bashio::log.info "Starting NGINX..."
 exec nginx
