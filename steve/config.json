@@ -9,6 +9,7 @@
   "init": false,
   "ingress": true,
   "ingress_stream": true,
+  "ingress_port": 1337,
   "panel_icon": "mdi:CarElectric",
   "map": ["ssl"],
   "services": ["mysql:need"],
