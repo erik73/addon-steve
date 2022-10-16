@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/erik73/base/amd64:2.0.0
+ARG BUILD_FROM=ghcr.io/erik73/base/amd64:2.0.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -16,7 +16,7 @@ RUN apk add --no-cache \
     git=2.36.2-r0 \
     && mkdir -p /usr/src/ \
     && cd /usr/src/ \
-    && git clone -b master --depth 1 https://github.com/steve-community/steve \
+    && git clone -b steve-3.5.0 --depth 1 https://github.com/steve-community/steve \
     && apk del .build-dependencies 
 # Copy data for add-on
 COPY rootfs /
