@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/erik73/base/amd64:2.0.1
+ARG BUILD_FROM=ghcr.io/erik73/base/amd64:2.0.2
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
 RUN apk add --no-cache \
-    openjdk11=11.0.16.1_p1-r0 \
+    openjdk11=11.0.17_p8-r1 \
     maven=3.8.5-r0 \
     xmlstarlet=1.6.1-r0 \
     mariadb-client=10.6.10-r0 \
