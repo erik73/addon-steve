@@ -9,7 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN apk add --no-cache \
     openjdk11=11.0.17_p8-r3 \
     maven=3.8.6-r0 \
-    xmlstarlet=1.6.1-r0 \
+    xmlstarlet=1.6.1-r1 \
     mariadb-client=10.6.11-r0 \
     nginx=1.22.1-r0 \
     && apk add --no-cache --virtual .build-dependencies \
