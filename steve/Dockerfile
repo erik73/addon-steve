@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
 RUN apk add --no-cache \
-    openjdk11=11.0.17_p8-r3 \
+    openjdk11=11.0.18_p10-r0 \
     maven=3.8.6-r0 \
     xmlstarlet=1.6.1-r1 \
     mariadb-client=10.6.11-r0 \
