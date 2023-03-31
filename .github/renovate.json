@@ -30,7 +30,7 @@
       "matchStrings": [
         "ARG STEVE_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
-      "datasourceTemplate": "github-tags",
+      "datasourceTemplate": "github-releases",
       "versioningTemplate": "loose",
       "depNameTemplate": "/steve-community/steve"
     }
