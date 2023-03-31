@@ -33,6 +33,7 @@
       "datasourceTemplate": "github-releases",
       "versioningTemplate": "loose",
       "depNameTemplate": "/steve-community/steve"
+      "extractVersionTemplate": "^steve-(?<version>.*)$"
     }
   ],
   "packageRules": [
