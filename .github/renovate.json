@@ -28,7 +28,7 @@
     {
       "fileMatch": ["/Dockerfile$"],
       "matchStrings": [
-        "ARG STEVE_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+        "ARG STEVE_VERSION=steve-[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
       "datasourceTemplate": "github-tags",
       "versioningTemplate": "loose",
