@@ -32,7 +32,7 @@
       ],
       "datasourceTemplate": "github-tags",
       "versioningTemplate": "loose",
-      "depNameTemplate": "/steve-community/steve/steve-"
+      "depNameTemplate": "/steve-community/steve"
     }
   ],
   "packageRules": [
