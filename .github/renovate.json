@@ -32,7 +32,7 @@
       ],
       "datasourceTemplate": "github-tags",
       "packageNameTemplate": "steve-community/steve",
-      "depNameTemplate": "{{steve}}",
+      "depNameTemplate": "steve-",
       "versioningTemplate": "loose",
       "extractVersionTemplate": "^steve-(?<version>.*)$"
     }
