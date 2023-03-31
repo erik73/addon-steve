@@ -31,8 +31,8 @@
         "ARG STEVE_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
       "datasourceTemplate": "github-tags",
+      "packageNameTemplate": "steve-community/steve",
       "versioningTemplate": "loose",
-      "depNameTemplate": "/steve-community/steve",
       "extractVersionTemplate": "^steve-(?<version>.*)$"
     }
   ],
