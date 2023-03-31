@@ -5,7 +5,7 @@ FROM ${BUILD_FROM}
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-ARG STEVE_VERSION="steve-3.5.0"
+ARG STEVE_VERSION="3.5.0"
 
 # Setup base
 RUN apk add --no-cache \
@@ -18,7 +18,7 @@ RUN apk add --no-cache \
     git=2.38.4-r1 \
     && mkdir -p /usr/src/ \
     && cd /usr/src/ \
-    && git clone -b ${STEVE_VERSION} --depth 1 https://github.com/steve-community/steve \
+    && git clone -b steve-${STEVE_VERSION} --depth 1 https://github.com/steve-community/steve \
     && apk del .build-dependencies 
 # Copy data for add-on
 COPY rootfs /
