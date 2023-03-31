@@ -32,7 +32,7 @@
       ],
       "datasourceTemplate": "github-tags",
       "versioningTemplate": "loose",
-      "depNameTemplate": "/steve-community/steve"
+      "depNameTemplate": "/steve-community/steve",
       "extractVersionTemplate": "^steve-(?<version>.*)$"
     }
   ],
