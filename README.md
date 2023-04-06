@@ -52,5 +52,5 @@ SOFTWARE.
 [github-actions-shield]: https://github.com/erik73/addon-steve/workflows/CI/badge.svg
 [github-actions]: https://github.com/erik73/addon-steve/actions
 [issue]: https://github.com/erik73/addon-steve/issues
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
