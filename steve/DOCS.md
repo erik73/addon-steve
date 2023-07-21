@@ -47,7 +47,7 @@ The absolute minimum is 4GB of RAM intsalled in the host.
 Depending on other add-ons that are installed 4GB might not be enough.
 
 It is also important to understand that the admin_user and admin_password can not be
-changed after the first start of the add-on, since the MariaDB database is created with 
+changed after the first start of the add-on, since the MariaDB database is created with
 these credentials the first time the add-on is started.
 
 There is no ingress support, so to reach the SteVe web interface you have to point your
