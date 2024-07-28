@@ -18,7 +18,7 @@ RUN apk add --no-cache \
     git=2.45.2-r0 \
     && mkdir -p /usr/src/ \
     && cd /usr/src/ \
-    && git clone -b master --depth 1 https://github.com/steve-community/steve \
+    && git clone -b steve-${STEVE_VERSION} --depth 1 https://github.com/steve-community/steve \
     && apk del .build-dependencies 
 # Copy data for add-on
 COPY rootfs /
