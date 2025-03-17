@@ -13,7 +13,7 @@ RUN apk add --no-cache \
     maven=3.9.9-r0 \
     xmlstarlet=1.6.1-r2 \
     mariadb-client=11.4.5-r0 \
-    nginx=1.26.2-r4 \
+    nginx=1.26.3-r0 \
     && apk add --no-cache --virtual .build-dependencies \
     git=2.47.2-r0 \
     && mkdir -p /usr/src/ \
