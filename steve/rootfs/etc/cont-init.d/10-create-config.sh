@@ -33,6 +33,7 @@ database=$(\
         -u "${username}" -p"${password}" \
         -h "${host}" -P "${port}" \
         --skip-column-names \
+        --skip-ssl \
         -e "SHOW DATABASES LIKE 'stevedb';"
 )
 
@@ -40,6 +41,7 @@ if ! bashio::var.has_value "${database}"; then
     bashio::log.info "Creating database for SteVe"
     mariadb \
         -u "${username}" -p"${password}" \
+        --skip-ssl \
         -h "${host}" -P "${port}" \
             < /usr/src/steve/createdb.sql
 fi
