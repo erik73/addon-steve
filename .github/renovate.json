@@ -35,7 +35,7 @@
       ],
       "datasourceTemplate": "github-tags",
       "packageNameTemplate": "steve-community/steve",
-      "depNameTemplate": "SteVe OCCP",
+      "depNameTemplate": "SteVe OCPP",
       "versioningTemplate": "loose",
       "extractVersionTemplate": "^steve-(?<version>.*)$"
     }

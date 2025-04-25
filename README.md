@@ -9,11 +9,11 @@
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
-SteVe OCCP server.
+SteVe OCPP server.
 
 ## About
 
-Steve is an OCCP server for communicationg with charge points
+Steve is an OCPP server for communicationg with charge points
 
 ## Support
 
