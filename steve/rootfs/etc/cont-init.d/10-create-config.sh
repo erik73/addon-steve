@@ -29,7 +29,7 @@ sed -i 's/^auth.password .*$/auth.password = '"$adminpassword"'/' /usr/src/steve
 sed -i 's/^    private final String timeZoneId .*$/    private final String timeZoneId = "'"$timezone"'";/' /usr/src/steve/src/main/java/de/rwth/idsg/steve/SteveConfiguration.java
 
 database=$(\
-    mysql \
+    mariadb \
         -u "${username}" -p"${password}" \
         -h "${host}" -P "${port}" \
         --skip-column-names \
@@ -38,7 +38,7 @@ database=$(\
 
 if ! bashio::var.has_value "${database}"; then
     bashio::log.info "Creating database for SteVe"
-    mysql \
+    mariadb \
         -u "${username}" -p"${password}" \
         -h "${host}" -P "${port}" \
             < /usr/src/steve/createdb.sql
