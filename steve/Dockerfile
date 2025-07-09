@@ -15,7 +15,7 @@ RUN apk add --no-cache \
     mariadb-client=11.4.5-r2 \
     nginx=1.28.0-r3 \
     && apk add --no-cache --virtual .build-dependencies \
-    git=2.49.0-r0 \
+    git=2.49.1-r0 \
     && mkdir -p /usr/src/ \
     && cd /usr/src/ \
     && git clone -b steve-${STEVE_VERSION} --depth 1 https://github.com/steve-community/steve \
