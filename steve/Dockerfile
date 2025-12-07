@@ -10,7 +10,7 @@ ARG STEVE_VERSION="3.9.0"
 # Setup base
 RUN apk add --no-cache \
     openjdk21=21.0.9_p10-r0 \
-    maven=3.9.9-r0 \
+    maven=3.9.11-r0 \
     xmlstarlet=1.6.1-r2 \
     mariadb-client=11.4.9-r0 \
     nginx=1.28.0-r3 \
