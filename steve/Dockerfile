@@ -5,7 +5,7 @@ FROM ${BUILD_FROM}
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-ARG STEVE_VERSION="3.8.0"
+ARG STEVE_VERSION="3.9.0"
 
 # Setup base
 RUN apk add --no-cache \
