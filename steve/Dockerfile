@@ -12,7 +12,7 @@ RUN apk add --no-cache \
     openjdk21=21.0.9_p10-r0 \
     maven=3.9.9-r0 \
     xmlstarlet=1.6.1-r2 \
-    mariadb-client=11.4.8-r0 \
+    mariadb-client=11.4.9-r0 \
     nginx=1.28.0-r3 \
     && apk add --no-cache --virtual .build-dependencies \
     git=2.49.1-r0 \
