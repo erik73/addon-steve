@@ -26,7 +26,7 @@ sed -i 's/^server.host .*$/server.host = 0.0.0.0/' /usr/src/steve/src/main/resou
 sed -i 's/^http.port .*$/http.port = 8180/' /usr/src/steve/src/main/resources/application-prod.properties
 sed -i 's/^auth.user .*$/auth.user = '"$adminuser"'/' /usr/src/steve/src/main/resources/application-prod.properties
 sed -i 's/^auth.password .*$/auth.password = '"$adminpassword"'/' /usr/src/steve/src/main/resources/application-prod.properties
-sed -i 's/^    private final String timeZoneId .*$/    private final String timeZoneId = "'"$timezone"'";/' /usr/src/steve/src/main/java/de/rwth/idsg/steve/SteveConfiguration.java
+sed -i 's/^    public static final String TIME_ZONE_ID .*$/     public static final String TIME_ZONE_ID = "'"$timezone"'";/' /usr/src/steve/src/main/java/de/rwth/idsg/steve/config/SteveProperties.java
 
 database=$(\
     mariadb \
