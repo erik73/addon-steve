@@ -8,6 +8,8 @@ arch:
   - aarch64
   - amd64
 stage: experimental
+ingress: true
+ingress_stream: true
 init: false
 panel_icon: mdi:CarElectric
 map:

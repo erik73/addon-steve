@@ -1,7 +1,7 @@
 #!/command/with-contenv bashio
 # ==============================================================================
-# Home Assistant Community Add-on: Traccar
-# Configures NGINX for use with the Traccar server
+# Home Assistant Community Add-on: Steve
+# Configures NGINX for use with the Steve server
 # ==============================================================================
 
 # Generate direct access configuration, if enabled.
