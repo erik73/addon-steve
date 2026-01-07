@@ -8,11 +8,7 @@ arch:
   - aarch64
   - amd64
 stage: experimental
-ingress: true
-ingress_port: 0
-host_network: true
-ingress_stream: true
-ingress_entry: manager/
+webui: http://[HOST]:[PORT:8180]
 init: false
 panel_icon: mdi:CarElectric
 map:
@@ -20,11 +16,9 @@ map:
 services:
   - mysql:need
 ports:
-  80/tcp: null
   8180/tcp: 8180
   12801/tcp:
 ports_description:
-  80/tcp: Web interface
   8180/tcp: SteVe TCP port
   12801/tcp: SteVe SOAP return port
 hassio_api: true

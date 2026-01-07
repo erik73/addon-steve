@@ -1,8 +1,0 @@
-#!/command/with-contenv bashio
-# ==============================================================================
-# Home Assistant Community Add-on: Steve
-# Runs the Nginx daemon
-# ==============================================================================
-bashio::net.wait_for 8180 localhost 900
-bashio::log.info "Starting NGinx server..."
-exec nginx
