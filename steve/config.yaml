@@ -12,7 +12,7 @@ ingress: true
 ingress_port: 0
 host_network: true
 ingress_stream: true
-ingress_entry: manager
+ingress_entry: manager/
 init: false
 panel_icon: mdi:CarElectric
 map:
