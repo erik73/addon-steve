@@ -10,6 +10,7 @@ arch:
 stage: experimental
 ingress: true
 ingress_port: 0
+host_network: true
 ingress_stream: true
 init: false
 panel_icon: mdi:CarElectric
