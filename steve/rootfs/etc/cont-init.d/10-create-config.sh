@@ -19,7 +19,7 @@ adminpassword=$(bashio::config 'admin_password')
 timezone=$(bashio::config 'timezone')
 
 # Modify config files
-sed -i 's#^context.path .*$#context.path = /#' /usr/src/steve/src/main/resources/application-prod.properties
+sed -i 's#^context.path .*$#context.path = #' /usr/src/steve/src/main/resources/application-prod.properties
 sed -i 's/^db.ip .*$/db.ip = '"$host"'/' /usr/src/steve/src/main/resources/application-prod.properties
 sed -i 's/^db.user .*$/db.user = '"$username"'/' /usr/src/steve/src/main/resources/application-prod.properties
 sed -i 's/^db.password .*$/db.password = '"$password"'/' /usr/src/steve/src/main/resources/application-prod.properties
