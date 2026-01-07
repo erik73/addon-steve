@@ -9,6 +9,6 @@ if ! bashio::fs.directory_exists '/data/target'; then
     cd /usr/src/steve || exit
     mvn package
     cp -f /usr/src/steve/pom.xml /data/
-    cp -R -f /usr/src/steve/target/ /data/
+    mv /usr/src/steve/target/ /data/
 fi
 

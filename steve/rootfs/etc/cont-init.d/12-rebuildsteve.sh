@@ -13,5 +13,5 @@ if [ "$builtversion" != "$packageversion" ]; then
     mvn package
     rm -rf /data/target
     cp -f /usr/src/steve/pom.xml /data/
-    cp -R -f /usr/src/steve/target/ /data/
+    mv /usr/src/steve/target/ /data/
 fi
