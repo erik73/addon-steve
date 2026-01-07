@@ -9,6 +9,7 @@ arch:
   - amd64
 stage: experimental
 ingress: true
+ingress_port: 0
 ingress_stream: true
 init: false
 panel_icon: mdi:CarElectric
