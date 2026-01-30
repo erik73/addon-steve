@@ -1,6 +1,6 @@
 #!/command/with-contenv bashio
 # ==============================================================================
-# Home Assistant Add-on: SteVe
+# Home Assistant App: SteVe
 # Check if SteVe needs to be built
 # ==============================================================================
 

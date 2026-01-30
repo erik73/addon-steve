@@ -20,7 +20,7 @@ RUN apk add --no-cache \
     && cd /usr/src/ \
     && git clone -b steve-${STEVE_VERSION} --depth 1 https://github.com/steve-community/steve \
     && apk del .build-dependencies 
-# Copy data for add-on
+# Copy data for app
 COPY rootfs /
 
 # Build arguments
