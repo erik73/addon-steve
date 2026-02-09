@@ -47,10 +47,10 @@ SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/erik73/addon-steve.svg
-[commits]: https://github.com/erik73/addon-steve/commits/main
-[github-actions-shield]: https://github.com/erik73/addon-steve/workflows/CI/badge.svg
-[github-actions]: https://github.com/erik73/addon-steve/actions
-[issue]: https://github.com/erik73/addon-steve/issues
+[commits-shield]: https://img.shields.io/github/commit-activity/y/erik73/app-steve.svg
+[commits]: https://github.com/erik73/app-steve/commits/main
+[github-actions-shield]: https://github.com/erik73/app-steve/workflows/CI/badge.svg
+[github-actions]: https://github.com/erik73/app-steve/actions
+[issue]: https://github.com/erik73/app-steve/issues
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
