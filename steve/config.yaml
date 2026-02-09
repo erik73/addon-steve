@@ -3,7 +3,7 @@ name: SteVe
 version: dev
 slug: steve
 description: OCPP server for EV charging stations
-url: https://github.com/erik73/addon-steve
+url: https://github.com/erik73/app-steve
 arch:
   - aarch64
   - amd64

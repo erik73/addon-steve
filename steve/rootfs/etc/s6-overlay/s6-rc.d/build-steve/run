@@ -11,4 +11,3 @@ if ! bashio::fs.directory_exists '/data/target'; then
     cp -f /usr/src/steve/pom.xml /data/
     mv /usr/src/steve/target/ /data/
 fi
-
